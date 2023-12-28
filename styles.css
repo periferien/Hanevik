@@ -1,0 +1,262 @@
+.ddoverlap{
+border-bottom: 1px solid #bbb8a9;
+margin-left: 30px;
+width: 67%;
+max-width: 725px;
+}
+
+.ddoverlap ul{
+padding: 0;
+margin: 0 px;
+font: bold 90% default;
+list-style-type: none;
+}
+
+.ddoverlap li{
+display: inline;
+margin: 0;
+}
+
+.ddoverlap li a{
+padding: 3px 7px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+ color: #0099FF;
+padding-right: 32px; /*extra right padding to account for curved right edge of tab image*/
+color: #0099FF;
+background: transparent url(images/righttabdefault.gif) 100% 1px no-repeat; /*give illusion of shifting 1px down vertically*/
+border-left: 1px solid #0099FF;
+position: relative;
+display: block;
+float: left;
+margin-left: -20px; /*shift tabs 20px to the left so they overlap*/
+left: 20px;
+}
+
+.ddoverlap li a:visited{
+color: #0099FF;
+}
+
+.ddoverlap li a:hover{
+text-decoration: none;
+}
+
+.ddoverlap li.selected a{ /*selected tab style*/
+color: black;
+z-index: 100; /*higher z-index so selected tab is topmost*/
+top: 2px; /*Shift tab 1px down so the border beneath it is covered*/
+background: transparent url(images/righttabselected.gif) 100% 0 no-repeat;
+}
+
+.ddoverlap li.selected a:hover{
+text-decoration: none;
+}
+
+
+body {
+	background-color: #0099FF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #000
+	}
+
+td, th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #333333;
+}
+
+a {
+	font-size: 12px;
+	color: #1915a5;
+}
+
+form {
+	background-color: #CCCC99;
+}
+
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+ background-color: #99CC00; color: #003333;}
+
+.subtitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+ color: #0099FF;
+ }
+
+.header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #993333;
+}
+
+.nav {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	background-color: #CCCCCC;
+}
+
+.navLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #DEDECA;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left;
+	position: absolute;
+	width: 120px;
+}
+
+.sidebar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	padding: 3px;
+	background-color: #FFFFCC;
+ color: #003333;
+}
+
+.sidebarHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #003300;
+	background-color: #FFFF66;
+}
+
+.sidebarFooter {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	background-color: #FFFF99;
+ font-style: italic;
+}
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 22px;
+	color: #333333;
+	background-color: #CCFF99;
+}
+
+.legal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #333333;
+}
+
+.box1 {
+	border-width: thin;
+	border-color: #99FF99 #003300 #003300 #99FF99;
+ border-style: double;
+ }
+
+.promo {
+	font-family: "Times New Roman", Times, serif;
+	color: #000033;
+}
+
+.titlebar {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	background-color: #336699;
+}
+
+.dingbat {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+ color: #660000; font-weight: bolder; font-size: medium;
+ }
+
+input.big {
+	width: 100px;
+}
+
+input.small {
+	width: 50px;
+}
+.leftcontent {
+	float: left;
+	width: 67%;
+	max-width: 800px;
+	padding-left: 12px;
+	background-color: #FFFFFF;
+	left: 31px;
+	position: relative;
+	padding-top: 12px;
+	padding-right: 12px;
+}
+.rightcontent {
+	background-color: #0099FF;
+	float: none;
+	margin: 15px;
+	padding: 15px;
+	position: relative;
+}
+
+.gallerycontainer{
+position: relative;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+
+.thumbnail img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+border: 1px solid black;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: white;
+padding: 5px;
+left: -1000px;
+border: 1px solid white;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0;
+left: 230px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+}
+
+/* My Comment */
+
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	color: #000000;
+	background-color: #0099FF;
+	line-height: 64px;
+	letter-spacing: 4px;
+	clip:   rect(auto auto auto 15px);
+	margin-left: 54px;
+}
