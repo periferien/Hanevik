@@ -53,14 +53,6 @@ background: transparent url(images/righttabselected.gif) 100% 0 no-repeat;
 text-decoration: none;
 }
 
-</style>
-
-<!--[if IE]>
-<style type="text/css">
-.ddoverlap{
-height: 1%;  /*Apply Holly 3px jog hack to get IE to position bottom border correctly beneath the menu*/
-}
-
 
 body {
 	background-color: #0099FF;
